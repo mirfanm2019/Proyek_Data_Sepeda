@@ -1,42 +1,25 @@
-Proyek Analisis Data Penyewaan Sepeda
-Deskripsi
-Proyek ini melakukan analisis data pada Bike Sharing Dataset untuk mengidentifikasi pola penggunaan sepeda berdasarkan waktu, cuaca, dan kondisi harian. Hasil analisis disajikan dalam bentuk dashboard interaktif.
+#  Bike Sharing Analysis Dashboard
 
-Struktur Direktori
-/dashboard: Berisi file dashboard.py dan dataset yang telah dibersihkan untuk tampilan visual.
+Halo! Ini adalah dashboard sederhana untuk menganalisis data penyewaan sepeda. Proyek ini dibuat sebagai tugas untuk **Machine Learning GDG UNSRI**.
 
+## Informasi Pembuat
+* **Nama:** M. Irfan Maulana
+* **Proyek:** Analisis Data Penyewaan Sepeda (Bike Sharing)
+* **Instansi:** Teknik Informatika 2025
 
-/data: Dataset mentah dalam format CSV (harian dan jam).
+##  Struktur File
+* `dashboard.py`: File utama aplikasi Streamlit (kodingan).
+* `day.csv`: Dataset penyewaan sepeda yang digunakan.
+* `requirements.txt`: Daftar library (Pandas, Matplotlib, Seaborn, Streamlit).
+* `README.md`: Dokumen penjelasan proyek ini.
 
-notebook.ipynb: File dokumentasi proses analisis mulai dari pembersihan data hingga visualisasi.
+##  Insight dari Data
+Berdasarkan visualisasi yang ada di dashboard:
+1. **Tren Harian:** Terjadi kenaikan jumlah penyewa yang signifikan dari tahun 2011 ke 2012, terutama di pertengahan tahun.
+2. **Kondisi Hari:** Rata-rata penyewaan sepeda lebih tinggi pada **Hari Kerja** dibandingkan Hari Libur. Ini menunjukkan bahwa sepeda digunakan sebagai alat transportasi rutin oleh pengguna.
 
-requirements.txt: Daftar pustaka Python yang dibutuhkan.
-
-Instalasi
-Clone repositori ini:
-
-Bash
-
-git clone https://github.com/mirfanm2019/Proyek_Data_Sepeda.git
-Instal library yang dibutuhkan:
-
-Bash
-
-pip install -r requirements.txt
-Cara Menjalankan Dashboard
-Masuk ke direktori dashboard:
-
-Bash
-
-cd dashboard
-Jalankan aplikasi Streamlit:
-
-Bash
-
-streamlit run dashboard.py
-Fitur Utama
-Analisis tren penyewaan sepeda berdasarkan musim.
-
-Perbandingan penggunaan sepeda pada hari kerja dan hari libur.
-
-Visualisasi pengaruh kondisi cuaca terhadap jumlah pengguna.
+##  Cara Menjalankan di Lokal
+1. Pastikan kamu sudah punya Python di laptop.
+2. Install semua library yang diperlukan:
+   ```bash
+   pip install -r requirements.txt
