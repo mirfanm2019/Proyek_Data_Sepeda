@@ -27,6 +27,7 @@ st.pyplot(fig1)
 st.write("**Insight:** Terjadi peningkatan signifikan di tahun 2012 dibandingkan 2011, dengan puncak di pertengahan tahun.")
 
 #Grafik 2
+st.subheader(" Rata-rata penyewaan pada hari kerja dan libur")
 avg_sewa=df.groupby('workingday')['cnt'].mean()
 fig2,ax2=plt.subplots(figsize=(10,6))
 avg_sewa.plot(kind='bar', color=["#CB4F33", "#079621"], ax=ax2)
@@ -36,3 +37,4 @@ ax2.set_ylabel("Rata-rata penyewa")
 
 st.pyplot(fig2)
 st.write("**Insight:** Rata-rata penyewaan lebih tinggi pada hari kerja, menunjukkan penggunaan utama untuk transportasi rutin.")
+
